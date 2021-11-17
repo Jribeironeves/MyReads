@@ -1,0 +1,100 @@
+.cabecalho {
+    background-color: var(--cor-contraste-claro);
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--sombra);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 4.75rem;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-familia-logo);
+    font-size: var(--fonte-tamanho-logo);
+    color:#000000;
+    position: absolute;
+    top: 15px;
+    left: 15%;
+}
+
+.cabecalho__titulo:hover{
+    color:#4D4D4D;
+    cursor: pointer;
+}
+
+.logo_livro{
+    cursor: pointer;
+    position: absolute;
+    left: -0.7%;
+    top: 1%;
+}
+
+nav{
+  position: absolute; 
+  top: 30px;
+  right: 39%; 
+}
+
+nav li{
+  display: inline; 
+  margin: 0 5px 0 20px; 
+}
+
+nav li{
+  font-family: var(--fonte-familia-corpo);
+  color:#000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none; 
+}
+
+nav li:hover{ 
+  color:#4D4D4D;
+  text-decoration: none; 
+  cursor: pointer;
+}
+.btn_search{
+  position: absolute;
+  display: inline-flex;
+  top: 3%;
+  right: 10%;
+  width: 300px;
+  height: 40px;
+  margin: 0 15px;
+  perspective: 70000px;
+}
+.btn_search{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.btn_search:before,
+.btn_search:after{
+  position: absolute;
+  content: "Search";
+  height: 40px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn_search:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.btn_search:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.btn_search:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+

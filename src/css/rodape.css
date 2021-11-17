@@ -1,0 +1,17 @@
+.footer{
+    height:24px; 
+    width: 100%; 
+    background: #000000;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+}
